@@ -1,0 +1,446 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+  }
+  
+  body {
+      height: auto;
+      width: 100%;
+      line-height: 1.8;
+  }
+  
+  body, html {
+    height: 100%;
+    background: rgb(203,244,250);
+    background: radial-gradient(circle, rgba(203,244,250,1) 0%, rgba(231,233,211,1) 100%);
+  }
+
+  header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header img {
+   width: 100%;
+   height: 100%;
+  }
+
+ /* HERO IMAGE TEXT */
+
+  /* Parent Container */
+  .content_img{
+    max-width: 80%;
+    max-height: 90vh;
+    border: 1px solid rgb(32, 231, 179);
+    box-shadow: 3px 3px 10px #aaaaaa;
+    margin: 5em auto;
+    position: relative;
+    float: left;
+  }
+ 
+  /* Child Text Container */
+  .content_img div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgb(32, 231, 179);
+    color: #000;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 1.5em;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+  
+  /* Hover on Parent Container */
+  .content_img:hover div{
+    width: 200px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.9; 
+    cursor: default;
+  }
+
+ /* ----- TOP SECTION ----- */
+  #top {
+    margin-top: -3em;
+  }
+
+ .container-top {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
+   padding-top: 4em;
+   padding-bottom: 4em;
+ }
+
+ .text-content-top {
+    max-width: 35%;
+ }
+
+ p {
+   margin-bottom: 0.8em;
+ }
+
+ .map {
+    width: 18em;
+    height: 14em;
+    background: url(../images/maps/divoka_sarka.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    border: 0.05em solid #aaa;
+    box-shadow: 3px 3px 10px #aaaaaa;
+ }
+
+ /* MAP VENUES */
+ .map-psi-hory {
+  background: url(../images/maps/zlate_psi_hory.jpg);
+  background-size: cover;
+ }
+
+ .map-nutrie {
+  background: url(../images/maps/nutrie.jpg);
+  background-size: cover;
+ }
+
+ .map-eurotrip {
+  background: url(../images/maps/eurotrip.jpg);
+  background-size: cover;
+ }
+
+ .map-sloniKameny {
+  background: url(../images/maps/sloni_kameny.jpg);
+  background-size: cover;
+ }
+
+ .map-link {
+    transition: all .2s ease-in-out;
+ }
+
+ .map-link:hover {
+    transform: scale(1.02);
+ }
+
+ /* ----- MIDDLE SECTION ----- */
+  #mid {
+    border-top: 2px dashed rgb(32, 231, 179);
+    border-bottom: 2px dashed rgb(32, 231, 179);
+    box-shadow: 3px 3px 10px #aaaaaa;
+  }
+
+ .container-mid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 3em 2em;
+ }
+
+.text-content-mid {
+    align-self: center;
+    max-height: 8em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.icons-container-mid {
+    align-self: center;
+    max-height: 8em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+ .stats {
+    font-size: 2em;
+    margin-right: 0.8em;
+ }
+
+ .stats-rotated {
+    display: inline-block;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg);
+ }
+
+ .team-rotated {
+    display: inline-block;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg);
+    font-size: 2em;
+    padding-left: 2em;
+}
+
+.team-photo-1 {
+  background: url(../images/team/rsz_pav.png);
+  background-size: cover;
+  background-position: center;
+  height: 2em;
+  width: 2em;
+  border: 0.15em solid #a1e0d0;
+  border-radius: 50%;
+  box-shadow: 3px 3px 10px #aaaaaa;
+  margin-right: 1.2em;
+  padding: 2.2em;
+  display: inline-block;
+}
+
+.team-photo-2 {
+  background: url(../images/team/rsz_ann2.png);
+  background-size: cover;
+  background-position: center;
+  height: 2em;
+  width: 2em;
+  border: 0.15em solid #a1e0d0;
+  border-radius: 50%;
+  box-shadow: 3px 3px 10px #aaaaaa;
+  margin-right: 1.2em;
+  padding: 2.2em;
+  display: inline-block;
+}
+
+
+.team-photo-3 {
+  background: url(../images/team/rsz_nutrie.png);
+  background-size: cover;
+  background-position: center;
+  height: 2em;
+  width: 2em;
+  border: 0.15em solid #a1e0d0;
+  border-radius: 50%;
+  box-shadow: 3px 3px 10px #aaaaaa;
+  margin-right: 1.2em;
+  padding: 2.2em;
+  display: inline-block;
+}
+
+ /* ----- BOTTOM SECTION ----- */
+
+ .container-bottom {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.text-content-bottom {
+  align-self: center;
+  max-width: 55%;
+  margin-top: 1.5em;
+}
+
+.img-gallery {
+  align-self: center;
+  margin-top: 5em;
+}
+
+ /* ----- IMAGE GALLERY ----- */
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  text-align: center;
+  display: inline-block;
+  list-style: none;
+  position: relative;
+  border: solid 12px rgb(161,224,208);
+  background:rgb(161,224,208);
+  box-shadow: 0 0 15px 0px #555;
+  transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  top: 20px;
+}
+
+li:hover{
+  top:0px;
+  opacity:0.5;
+}
+
+li:nth-child(1){
+    transform:rotate(10deg);
+}
+
+li:nth-child(2){
+    transform:rotate(0deg);
+}
+
+li:nth-child(3){
+    transform:rotate(-10deg);
+}
+
+li:nth-child(4){
+    transform:rotate(20deg);
+}
+
+.light{
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 700px;
+  height: 700px;
+  background: rgb(161,224,208);
+  filter: blur(100px);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* ----- Lightbox ----- */
+
+#lightbox {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  display: none;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img {
+  height: auto;
+  max-width: 80%;
+  max-height: 150vh;
+  background-size: cover;
+}
+
+
+/* ----- Scrollbar ----- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(32, 231, 179, 0.8); 
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+background: rgba(205, 205, 205, 0.4); 
+}
+
+/* ALBUM BUTTON*/
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: -7em;
+}
+
+.btn-text {
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.btn {
+  text-decoration: none;
+  border: 1px solid rgb(32, 231, 179);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  box-shadow: 1px 1px 25px 10px rgba(32, 231, 179, 0.4);
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(32, 231, 179, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.btn:hover:before {
+  left: 100%;
+}
+
+/* ICONS */
+
+/* RETURN ICON */
+
+.fa-arrow-left {
+  position: absolute;
+  top: 1.1em;
+  left: 1.1em;
+  font-size: 1.5em;
+  color: rgb(32, 231, 179);
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.fa-arrow-left:hover {
+  color: rgb(11, 208, 155);
+  text-shadow:0px 0px 30px rgb(11, 208, 155);
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+/* HAMBURGER MENU ICON */
+.fa-bars {
+  position: absolute;
+  top: 1.1em;
+  right: 1.1em;
+  font-size: 1.5em;
+  color: rgb(32, 231, 179);
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.fa-bars:hover {
+  color: rgb(11, 208, 155);
+  text-shadow:0px 0px 30px rgb(11, 208, 155);
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
